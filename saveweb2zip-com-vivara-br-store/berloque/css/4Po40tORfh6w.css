@@ -1,0 +1,309 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Garante que os itens estejam nos extremos e no centro */
+    align-items: center; /* Centraliza verticalmente os itens */
+    background-color: #ffffff; /* Cor de fundo do navbar */
+    padding-left: 10px;
+}
+
+.menu-icon, .logo-right, .logo-central {
+    flex-grow: 0; /* Não permite que os itens cresçam */
+    flex-shrink: 0; /* Não permite que os itens encolham */
+}
+
+.menu-icon, .logo-right {
+    margin: 0; /* Remove margens para que fiquem nos extremos */
+}
+
+.logo-central {
+    flex-grow: 1; /* Permite que a logo central cresça e ocupe todo o espaço restante */
+    text-align: center; /* Centraliza a logo no espaço disponível */
+}
+
+.material-symbols-outlined {
+    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+.logo-central img, .logo-right img {
+    height: 4vh; /* Ajuste a altura conforme necessário */
+}
+
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.bracelet-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.bracelet-item {
+    width: 45%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.bracelet-item img {
+    width: 100%;
+    height: auto;
+}
+
+.bracelet-item p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.price-tag {
+    background-color: #FF69B4;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.bracelet-item:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    margin-bottom: -15px;
+    background-color: #FEEDE4;
+    padding-bottom: 2px;
+}
+
+.dinheiro2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%; /* Adicione margem à direita para que o ">" não fique colado na borda */
+    margin-bottom: 15px;
+    font-family: 'GellixMedium';
+}
+
+.old {
+    text-decoration: line-through;
+    font-family: 'GellixMedium';
+}
+
+.new {
+    font-family: 'GellixSemiBold';
+    background-color: #FEEDE4;
+    padding: 4px 15px 4px 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nome {
+    font-family: 'GellixMedium';
+    text-align: center;
+}
+
+.title {
+    font-family: 'GellixMedium';
+    text-align: center;
+    font-size: 22px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(37, 37, 37);
+}
+
+.code {
+    font-family: 'GellixRegular';
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(128, 128, 128);
+    margin-top: -15px;
+}
+
+.sizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centraliza os botões e mantém espaço entre eles */
+    max-width: 500px; /* Largura máxima do contêiner para alinhar os botões corretamente */
+    margin: auto; /* Centraliza o contêiner na página */
+}
+
+.size-btn {
+    padding: 10px 10px; /* Ajusta o padding para melhorar a apresentação */
+    margin: 5px; /* Mantém uma margem entre os botões */
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    color: #171717;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 15px;
+    flex-basis: calc(20% - 10px); /* Calcula a largura de cada botão menos a margem */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    font-family: 'GellixMedium';
+}
+
+.size-btn:hover, .size-btn.active {
+    background-color: #fff8f4;
+    border-color: #FEEDE4;
+}
+
+.resgatar {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-family: 'GellixRegular';
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.divisoria {
+    border-bottom: 1px solid rgb(68, 68, 68);
+    width: 90%;
+    left: 2.5%;
+    right: 2.5%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.text2 {
+    font-family: 'GellixRegular';
+    color: rgb(128, 128, 128);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+.title2 {
+    font-family: 'GellixRegular';
+    color: rgb(68, 68, 68);
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+
+
+.berloque-container {
+    font-family: Arial, sans-serif;
+}
+
+.berloque-item {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+    padding: 10px; /* Adiciona espaço ao redor */
+    margin-bottom: 10px;
+}
+
+.berloque-item:hover {
+    background-color: #f0f0f0;
+}
+
+.berloque-item img {
+    width: 20%; /* Largura fixa para a imagem */
+    margin-right: 15px; /* Espaço entre a imagem e o checkbox */
+}
+
+.berloque-item input[type="checkbox"] {
+    margin-right: 10px; /* Espaço entre o checkbox e o texto */
+}
+
+.berloque-item label {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+
+#totalPrice {
+    margin-top: 20px;
+}
+
+#nextButton {
+    background-color: rgb(181, 180, 180); /* Preto quando habilitado */
+    width: auto;
+    height: 45px;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-family: 'GellixRegular';
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#nextButton:enabled {
+    background-color: black; /* Preto quando habilitado */
+    width: auto;
+    height: 45px;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-family: 'GellixMedium';
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.menuemb {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 9995;
+    border-top: 1px solid #b7b7b7;
+  }
+
+  
+  .menuemb a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    height: 50px;
+  }
+
+  .menuemb a img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .price {
+    font-family: 'GellixMedium';
+    font-size: 26px;
+  }
+
